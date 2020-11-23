@@ -195,19 +195,19 @@ public abstract class AbstractList<E> implements List<E>  {
  *
  * @param <E>
  */
-public class ArrayList2<E> extends AbstractList<E> {
+public class ArrayList<E> extends AbstractList<E> {
 	/**
 	 * 所有的元素
 	 */
 	private E[] elements;
 	private static final int DEFAULT_CAPACITY = 10;
 	
-	public ArrayList2(int capaticy) {
+	public ArrayList(int capaticy) {
 		capaticy = (capaticy < DEFAULT_CAPACITY) ? DEFAULT_CAPACITY : capaticy;
 		elements = (E[]) new Object[capaticy];
 	}
 	
-	public ArrayList2() {
+	public ArrayList() {
 		this(DEFAULT_CAPACITY);
 	}
 	
